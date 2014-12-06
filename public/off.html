@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <a href="/on.html">Turn LED On</a>
+  <script charset="utf-8" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script>
+  $(document).ready( function() {
+    console.log("ready" );
+    $.get( "/off", function( data ) {
+      console.log("Success", data );
+    })
+    .fail(
+      function(error){
+        console.log("Error: ", error );
+      });
+    })
+    </script>
+  </body>
+  </html>

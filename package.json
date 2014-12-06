@@ -1,0 +1,15 @@
+{
+  "name": "node-on-arduino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hit-route.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "postazure",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.4",
+    "johnny-five": "latest",
+  }
+}
