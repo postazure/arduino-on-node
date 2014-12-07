@@ -1,5 +1,6 @@
 var j5 = require("johnny-five");
 var express = require('express');
+require("./my_ip.js")
 
 var myBoard, myLed;
 var app = express()
@@ -31,13 +32,16 @@ app.get('/', function (req, res) {
 
 app.get('/on', function (req, res) {
   ledOn();
-  res.send('success')
+  res.send()
 })
 
 app.get("/off", function (req, res) {
   ledOff();
-  res.send('success')
+  res.send()
+
 })
+
+
 
 
 app.use(express.static(__dirname + '/public'));
