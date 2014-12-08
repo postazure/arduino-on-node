@@ -5,7 +5,6 @@ require("./my_ip.js")
 var myBoard, myLed;
 var app = express()
 
-
 myBoard = new j5.Board();
 
 var ledOn = function() {
@@ -40,9 +39,6 @@ app.get("/off", function (req, res) {
   res.send()
 
 })
-
-
-
 
 app.use(express.static(__dirname + '/public'));
 
